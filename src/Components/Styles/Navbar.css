@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+#header{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #850909;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-top: 0px !important;
+    background-color: black;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+#myName {
+    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 23px;
+}
+
+#myName span {
+    color: #850909 !important;
+}
+
+#flag img {
+    width: 50px;
+    border-radius: 38%;
+}
+
+#navBtns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#navBtns button {
+    border: 0;
+    background-color: transparent;
+    color: #ECDDF5;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+}
+
+#navBtns button:hover {
+    border: 1px solid #850909;
+    border-radius: 60px;
+}
+
+
+@media (max-width: 600px) {
+    
+    #myName{
+        font-size: 10px;
+    }
+    nav{
+        padding: 0px !important;
+    }
+    #navBtns button{
+        font-size: 10px !important;
+    }
+}
